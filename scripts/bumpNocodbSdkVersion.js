@@ -13,7 +13,8 @@ if (process.env.targetEnv === 'DEV') {
     // pr build
     // e.g. 0.84.2-pr-1234-20220220-1250
     packageJson.version = `${packageJson.version}-${process.env.targetVersion}`
-    packageJson.name += '-daily'
+    //packageJson.name += '-daily'
+    packageJson.name += '-hejunjie'
 } else {
     packageJson.version = process.env.targetVersion
 }
